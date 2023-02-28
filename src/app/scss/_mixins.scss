@@ -1,0 +1,24 @@
+//Font
+@font-face {
+    font-family: "League Spartan";
+    src: url('../../assets/fonts/LeagueSpartan-Regular.ttf');
+}
+
+//SASS MAP
+// 500px, 1440px
+$breakpoints-up: ("mobile": "31.25em", "desktop": "90em");
+
+// 499px, 1439px
+$breakpoints-down: ("mobile": "31.1875em", "desktop": "89.9375em");
+
+@mixin breakpoint-up($size){
+    @media (min-width: map-get($breakpoints-up, $size)){
+        @content;
+    }
+}
+
+@mixin breakpoint-down($size){
+    @media (max-width: map-get($breakpoints-down, $size)){ //map-get returns value of key-value pair
+        @content; //output content of media
+    }
+}

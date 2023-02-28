@@ -1,0 +1,36 @@
+<div class="container">
+    <div class="calc">
+        <div class="wrapper">
+            <div class="top">
+                <div class="top__title">
+                    <p>calc</p>
+                </div>
+                <div class="top__toggles">
+                    <div class="theme"><p>THEME</p></div>
+                    <div class="theme-wrapper">
+                        <div class="theme-number"><p>1</p><p>2</p><p>3</p></div>
+                        <div class="theme-selector" (click)="themeSelect()" [style.justify-content]="reddotpos">
+                            <div class="reddot"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="display">
+                <div class="display__number"><p>{{calculateService.total | number: '1.0':'en-US'}}</p></div>
+            </div>
+            <div class="controls">
+                <mat-grid-list cols="4" rowHeight="60px" gutterSize="15px">
+                    <mat-grid-tile
+                        *ngFor="let tile of calcButtonsService.tiles; index as i"
+                        [colspan]="tile.cols"
+                        [rowspan]="tile.rows"
+                        [style.background]="tile.color"
+                        id="{{tile.btnid}}"
+                        (click)="calculateService.enterNumber(i)">
+                        <p>{{tile.title}}</p>
+                    </mat-grid-tile>
+                </mat-grid-list>
+            </div>
+        </div>
+    </div>
+</div>

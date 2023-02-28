@@ -1,0 +1,1 @@
+export type TTheme = 'light-theme' | 'dark-theme' | 'contrast-theme';

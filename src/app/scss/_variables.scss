@@ -1,0 +1,93 @@
+.dark-theme {
+    // DARK THEME
+    //BGs
+    --PrimaryBG: hsl(222, 26%, 31%);
+    --KeypadAndToggleBG: hsl(223, 31%, 20%);
+    --ScreenBG: hsl(224, 36%, 15%);
+
+    //Keys
+    --KeyBG: hsl(225, 21%, 49%);
+    --KeyShadow: hsl(224, 28%, 35%);
+    --AccentKey1: hsl(6, 63%, 50%);
+    --AccentKey1Shadow: hsl(6, 70%, 34%);
+    --MainKey: hsl(30, 25%, 89%);
+    --MainKeyShadow: hsl(28, 16%, 65%);
+
+    //Text
+    --TextColor: hsl(221, 14%, 31%)0;
+    --TextWhite: hsl(0, 0%, 100%);
+    --TextEquals: hsl(0, 0%, 100%);
+    --TextDisplay: hsl(0, 0%, 100%);
+}
+
+// @media (prefers-color-scheme: light){
+//     .dark-theme.adaptive {
+//         // LIGHT THEME
+//             //BGs
+//             --PrimaryBG: hsl(0, 0%, 90%);
+//             --KeypadAndToggleBG: hsl(0, 5%, 81%);
+//             --ScreenBG: hsl(0, 0%, 93%);
+            
+//             //Keys
+//             --KeyBG: hsl(185, 42%, 37%);
+//             --KeyShadow: hsl(185, 58%, 25%);
+//             --AccentKey1: hsl(25, 98%, 40%);
+//             --AccentKey1Shadow: hsl(25, 99%, 27%);
+//             --MainKey: hsl(45, 7%, 89%);
+//             --MainKeyShadow: hsl(35, 11%, 61%);
+            
+//             //Text
+//             --TextColor: hsl(60, 10%, 19%);
+//             --TextWhite: hsl(0, 0%, 100%);
+//             --TextEquals: hsl(0, 0%, 100%);
+//             --TextDisplay: hsl(60, 10%, 19%);
+//     }
+// }
+
+.light-theme {
+// LIGHT THEME
+    //BGs
+    --PrimaryBG: hsl(0, 0%, 90%);
+    --KeypadAndToggleBG: hsl(0, 5%, 81%);
+    --ScreenBG: hsl(0, 0%, 93%);
+    
+    //Keys
+    --KeyBG: hsl(185, 42%, 37%);
+    --KeyShadow: hsl(185, 58%, 25%);
+    --AccentKey1: hsl(25, 98%, 40%);
+    --AccentKey1Shadow: hsl(25, 99%, 27%);
+    --MainKey: hsl(45, 7%, 89%);
+    --MainKeyShadow: hsl(35, 11%, 61%);
+    
+    //Text
+    --TextColor: hsl(60, 10%, 19%);
+    --TextWhite: hsl(0, 0%, 100%);
+    --TextEquals: hsl(0, 0%, 100%);
+    --TextDisplay: hsl(60, 10%, 19%);
+}
+  
+.contrast-theme {
+// CONTRAST THEME
+    //BGs
+    --PrimaryBG: hsl(268, 75%, 9%);
+    --KeypadAndToggleBG: hsl(268, 71%, 12%);
+    --ScreenBG: hsl(268, 71%, 12%);
+    
+    //Keys
+    --KeyBG: hsl(281, 89%, 26%);
+    --KeyShadow: hsl(285, 91%, 52%);
+    --AccentKey1: hsl(176, 100%, 44%);
+    --AccentKey1Shadow: hsl(177, 92%, 70%);
+    --MainKey: hsl(268, 47%, 21%);
+    --MainKeyShadow: hsl(290, 70%, 36%);
+    
+    //Text
+    --TextColor: hsl(52, 100%, 62%);
+    --TextWhite: hsl(0, 0%, 100%);
+    --TextEquals: hsl(198, 20%, 13%);
+    --TextDisplay: hsl(52, 100%, 62%);
+}
+
+//Font Weights
+$MidWeight: 400;
+$HeavyWeight: 700;
